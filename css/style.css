@@ -50,8 +50,13 @@ body {
     text-decoration: none;
     color: hsl(233, 8%, 62%);
     font-weight: 200;
-    padding-right: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
     font-size: 0.9rem;
+}
+
+.nav-main .nav-links a:hover {
+    border-bottom: 3px solid linear-gradient(to right top, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
 }
 
 .invite-btn {
