@@ -250,6 +250,14 @@ footer {
     min-height: 150px;
 }
 
+.social-svg {
+    transition: all 0.3s ease-in ;
+}
+
+.social-svg:hover {
+    fill: hsl(136, 65%, 51%);
+}
+
 footer .col {
     padding: 60px;
 }
@@ -282,6 +290,10 @@ footer .col ul li a,
 footer .col p {
     color:hsl(0, 0%, 100%);
     text-decoration: none;
+}
+
+footer .col ul li a {
+    transition: all 0.3s ease-in;
 }
 
 footer .col ul li a:hover {
@@ -360,6 +372,65 @@ footer .col-4 button {
 
     section#next-generation-banking .col-1 {
         max-width: 100%;
+    }
+
+    section#why-choose-easybank {
+        align-items: center;
+        text-align: center;
+    }
+
+    section#why-choose-easybank .card {
+        padding-right: 0;
+    }
+
+    section#why-choose-easybank .row-1 {
+        max-width: 100%;
+    }
+
+    section#why-choose-easybank .row-2,
+    section#latest-articles .cards {
+        flex-direction: column;
+    }
+
+    section#latest-articles h3 {
+        text-align: center;
+    }
+
+    section#latest-articles .card {
+        padding: 10px 0 0 0;
+    }
+
+    section#latest-articles .card img {
+        height: auto;
+    }
+
+    footer {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .col {
+        padding: 0;
+    }
+
+    footer .col-1 {
+        padding: 1.2rem 0;
+    }
+
+    footer .col-2, .col-3 {
+        text-align: center;
+    }
+
+    footer .col-4 {
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    footer ul li {
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (max-width: 430px) {
