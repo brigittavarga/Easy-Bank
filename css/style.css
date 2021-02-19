@@ -56,7 +56,8 @@ body {
 }
 
 .nav-main .nav-links a:hover {
-    border-bottom: 3px solid linear-gradient(to right top, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+    linear-gradient(to right top, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
 }
 
 .invite-btn {
