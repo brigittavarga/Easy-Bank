@@ -36,6 +36,10 @@ body {
     background-color: hsl(0, 0%, 100%);
     z-index: 300;
     padding: 0 80px;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
 }
 
 .nav-main .nav-links {
@@ -57,10 +61,12 @@ body {
 
 .nav-main .nav-links a:hover {
     border-bottom: 3px solid hsl(136, 65%, 51%);
-    linear-gradient(to right top, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+    /* should be color: 
+    linear-gradient(to right top, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da); */
 }
 
 .invite-btn {
+    cursor: pointer;
     font-family: 'Public Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
@@ -69,10 +75,15 @@ body {
     border: none;
     color: #fff;
     /* background gradient */
-    background: hsla(136, 65%, 51%, 1);
     background: linear-gradient(90deg, hsla(136, 65%, 51%, 1) 0%, hsla(192, 70%, 51%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(136, 65%, 51%, 1) 0%, hsla(192, 70%, 51%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(136, 65%, 51%, 1) 0%, hsla(192, 70%, 51%, 1) 100%);
+}
+
+.invite-btn:hover {
+    background: linear-gradient(90deg, hsla(136, 65%, 51%, 0.7) 0%, hsla(192, 70%, 51%, 0.7) 100%);
+    background: -moz-linear-gradient(90deg, hsla(136, 65%, 51%, 0.7) 0%, hsla(192, 70%, 51%, 0.7) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(136, 65%, 51%, 0.7) 0%, hsla(192, 70%, 51%, 0.7) 100%);
 }
 
 section,
@@ -84,7 +95,6 @@ section#next-generation-banking {
     background-color: hsl(0, 0%, 98%);
     position: relative;
     min-height: 100vh;
-    z-index: -100;
     display: flex;
     align-items: center;
 }
@@ -207,10 +217,16 @@ section#latest-articles .cards {
 section#latest-articles h6 {
     font-size: 1.2rem;
     font-weight: 200;
+    padding-bottom: 10px;
 }
 
 section#latest-articles p {
     font-size: 0.9rem;
+}
+
+section#latest-articles p:last-of-type:hover {
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
 }
 
 .author {
@@ -255,7 +271,6 @@ footer .logo {
 
 footer .col ul li {
     list-style: none;
-
 }
 
 footer .col-2 li,
@@ -267,6 +282,10 @@ footer .col ul li a,
 footer .col p {
     color:hsl(0, 0%, 100%);
     text-decoration: none;
+}
+
+footer .col ul li a:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 footer .col-4 {
@@ -289,7 +308,7 @@ footer .col-4 button {
         right: 0px;
         top: 8vh;
         height: 80vh;
-        width: 60%;
+        width: 100%;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -361,7 +380,7 @@ footer .col-4 button {
     }
 }
 
-.nav-active {
+nav .nav-active {
     transform: translateX(0%);
 }
 
