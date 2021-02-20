@@ -513,6 +513,10 @@ input[type="submit"] {
         width: 100%;
     }
 
+    section#contact-form-container .col-1 {
+        padding-left: 0;
+    }
+
     section#next-generation-banking .col-2 img:first-child {
         display: none;
     }
@@ -566,6 +570,12 @@ input[type="submit"] {
         height: auto;
     }
 
+
+    section#contact-form-container .col-1 {
+        width: 80%;
+        align-self: center;
+}
+
     footer {
         padding: 0;
         flex-direction: column;
@@ -597,6 +607,10 @@ input[type="submit"] {
     section#contact-form-container {
         flex-direction: column;
         justify-content: center;
+    }
+
+    section#get-to-know-you .col-2 {
+        max-width: 90%;
     }
     
 }
