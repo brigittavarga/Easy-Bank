@@ -455,7 +455,24 @@ input[type="submit"] {
 , hsla(136, 65%, 51%, 1) 0%, hsla(192, 70%, 51%, 1) 100%);
 }
 
+@media screen and (max-width: 1080px) {
+    .icon-q-a-small-1 {
+        top: 30%;
+        left: 35%;
+    }
+
+    .icon-q-a-small-2 {
+        left: 45%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+
+    .icon-q-a-small-1,
+    .icon-q-a-small-2 {
+        display: none;
+    }
+
     nav button {
         display: none;
     }
