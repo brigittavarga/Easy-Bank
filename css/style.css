@@ -473,16 +473,19 @@ input[type="submit"] {
         display: none;
     }
 
-    nav button {
-        display: none;
+    nav button,
+    .desktop-nav,
+    .desktop-nav li {
+        display: none !important;
     }
+    
     
     nav .nav-links {
         position: absolute;
         right: 0px;
         top: 8vh;
         height: 80vh;
-        width: 100%;
+        width: 100vw;
         background-color: #fff;
         display: flex;
         flex-direction: column;
@@ -633,9 +636,18 @@ input[type="submit"] {
     }
 }
 
-nav .nav-active {
+nav .nav-active .nav-links {
     transform: translateX(0%);
 }
+
+#burger > .svg-container-burger{
+    display:block;}
+    #burger > .svg-container-toggle-close{
+    display:none;}
+    #burger.nav-active > .svg-container-burger{
+    display:none;}
+    #burger.nav-active > .svg-container-toggle-close{
+    display:block;}
 
 @keyframes navLinkFade {
     from {

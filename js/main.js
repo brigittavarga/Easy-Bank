@@ -1,19 +1,14 @@
 const burger = document.querySelector(".burger");
 const toggleClose = document.querySelector(".toggle-close");
 const nav = document.querySelector(".nav-links");
-const navLinks = document.querySelectorAll(".nav-links li");
+const navLinks = document.querySelectorAll(".mobile-nav li");
+const burgerIcon = getElementById("burger");
 
-const navSlide = () => {
-
-    //Toggle nav 
-    burger.addEventListener("click", () => {
-        
-        nav.classList.toggle("nav-active");
-        toggleClose.style.display = "block";
-        burger.style.display = "none";
-
-        //Animate links
-        navLinks.forEach((link, index) => {
+function toggleFunction() {
+    var element = document.getElementById("burger");
+    element.classList.toggle("nav-active");
+    
+    navLinks.forEach((link, index) => {
 
         if(link.style.animation) {
             link.style.animation = "";
@@ -21,8 +16,6 @@ const navSlide = () => {
             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
         }
     });
+ }
 
-    });
-}
-
-navSlide();
+ toggleFunction();
