@@ -6,6 +6,7 @@ const burgerIcon = getElementById("burger");
 
 const inviteBtn = document.querySelectorAll(".invite-btn");
 const modalBg = document.querySelector(".modal-bg");
+const modalClose = document.querySelector("modal-close");
 
  // Toggle menu function
 function toggleFunction() {
@@ -28,3 +29,6 @@ function toggleFunction() {
  inviteBtn.addEventListener("click", function() {
     modalBg.classList.add("modal-active");
  });
+ modalClose.addEventListener("click", function() {
+     modalBg.classList.remove("modal-active");
+ })
