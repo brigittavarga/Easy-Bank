@@ -14,7 +14,7 @@ document.write(
       <li><a href="#">Careers</a></li>
     </ul>
   
-      <button class="invite-btn">Request Invite</button>
+      <button class="invite-btn modal-btn">Request Invite</button>
   
         <div onclick="toggleFunction()" id="burger" class="burger">
           <div class="svg-container-burger">

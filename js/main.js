@@ -4,6 +4,10 @@ const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".mobile-nav li");
 const burgerIcon = getElementById("burger");
 
+const inviteBtn = document.querySelectorAll(".invite-btn");
+const modalBg = document.querySelector(".modal-bg");
+
+ // Toggle menu function
 function toggleFunction() {
     var element = document.getElementById("burger");
     element.classList.toggle("nav-active");
@@ -19,3 +23,8 @@ function toggleFunction() {
  }
 
  toggleFunction();
+
+ // Get invite modal on request-btn click
+ inviteBtn.addEventListener("click", function() {
+    modalBg.classList.add("modal-active");
+ });

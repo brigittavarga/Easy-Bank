@@ -46,7 +46,7 @@ document.write(
     
 
     <div class="col col-4">
-      <button class="invite-btn">Request Invite</button>
+      <button class="invite-btn modal-btn">Request Invite</button>
       <p>© EasyBank | All Rights Reserved</p>
     </div>
 
