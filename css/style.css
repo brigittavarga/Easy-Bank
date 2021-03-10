@@ -468,6 +468,51 @@ section#contact-form-container .col-2 {
     align-items: center;
 }
 
+section#blog-main {
+    padding-top: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+section#blog-main h2 {
+    font-size: 1.7em;
+    font-weight: 200;
+    padding-bottom: 0.5em;
+}
+
+section#blog-main .col-1 {
+    width: 50%;
+}
+
+section#blog-main .col-1 img {
+    width: 100%;
+}
+
+section#blog-main .col-2 {
+    width: 60%;
+    padding: 0 10% 0 2%;
+}
+
+section#blog-main .col-2 a {
+    text-decoration: none;
+    border-bottom: 3px solid hsl(136, 65%, 51%);
+    font-weight: 200;
+    color:hsl(233, 8%, 62%);
+}
+
+section#blog-main .col-2 a:hover {
+    color: hsl(233, 26%, 24%);
+}
+
+section#blog-main .col-2 a,
+section#blog-main .col-2 p {
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: hsl(233, 8%, 62%);
+    margin-bottom: 20px;
+}
+
 address {
     text-align: center;
     font-style: normal;
