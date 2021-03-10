@@ -472,6 +472,7 @@ section#blog-main {
     padding-top: 20vh;
     display: flex;
     align-items: center;
+    padding-bottom: 6em;
 }
 
 section#blog-main h2 {
