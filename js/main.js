@@ -4,14 +4,10 @@ const nav = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".mobile-nav li");
 const burgerIcon = getElementById("burger");
 
-const inviteBtn = document.querySelectorAll(".invite-btn");
-const modalBg = document.querySelector(".modal-bg");
-const modalClose = document.querySelector("modal-close");
-
  // Toggle menu function
 function toggleFunction() {
-    var element = document.getElementById("burger");
-    element.classList.toggle("nav-active");
+    // var element = document.getElementById("burger");
+    burger.classList.toggle("nav-active");
     
     navLinks.forEach((link, index) => {
 
@@ -25,10 +21,18 @@ function toggleFunction() {
 
  toggleFunction();
 
- // Get invite modal on request-btn click
- inviteBtn.addEventListener("click", function() {
+ // Get invite modal on invite-btn click
+const modalBg = document.querySelector(".modal-bg");
+const modalClose = document.querySelector("modal-close");
+const inviteBtn = document.querySelectorAll(".invite-btn");
+
+function modalFunction(e) {
     modalBg.classList.add("modal-active");
- });
- modalClose.addEventListener("click", function() {
+}
+
+inviteBtn.forEach(btn => btn.addEventListener("click", modalFunction))
+
+modalClose.addEventListener("click", function() {
      modalBg.classList.remove("modal-active");
- })
+});
+
