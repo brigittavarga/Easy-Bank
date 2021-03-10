@@ -197,7 +197,8 @@ section#next-generation-banking .col-1 {
     max-width: 30%;
 }
 
-section#next-generation-banking .col-1 h1 {
+section#next-generation-banking .col-1 h1,
+#blog-main h1 {
     font-weight: 200;
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -476,11 +477,6 @@ section#blog-main {
     display: flex;
     align-items: center;
     padding-bottom: 6em;
-}
-
-section#blog-main h1 {
-    font-weight: 100;
-    font-size: 2.5rem;
 }
 
 section#blog-main .col-1 {
