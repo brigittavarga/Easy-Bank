@@ -706,6 +706,26 @@ input[type="submit"] {
 
 @media screen and (max-width: 768px) {
 
+    #blog-main {
+        flex-direction: column;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #blog-main img {
+        margin-bottom: 1em;
+    }
+
+    #blog-main .col-1,
+    #blog-main .col-2 {
+        width: 100% !important;
+    }
+
+    #blog-main .col-2 {
+        text-align: left;
+    }
+
+
     .icon-q-a-small-1,
     .icon-q-a-small-2 {
         display: none;
