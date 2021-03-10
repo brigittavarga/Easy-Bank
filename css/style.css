@@ -94,13 +94,6 @@ textarea {
     overflow-x: hidden;
 }
 
-/*
-.main-container {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-*/
-
 .burger,
 .toggle-close {
     display: none;
@@ -201,7 +194,7 @@ img#bg-intro-mobile {
 section#next-generation-banking .col-1 {
     display: flex;
     flex-direction: column;
-    max-width: 30%; 
+    max-width: 30%;
 }
 
 section#next-generation-banking .col-1 h1 {
@@ -210,7 +203,17 @@ section#next-generation-banking .col-1 h1 {
     margin-bottom: 20px;
 }
 
-section p {
+section#careers-heading h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+#career-benefit-h3 {
+    font-weight: 200;
+}
+
+section p,
+.main-cointainer-careers {
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.7;
@@ -514,6 +517,84 @@ section#blog-main .col-2 p {
     margin-bottom: 20px;
 }
 
+section#careers-heading {
+    padding-top: 20vh;
+    text-align: center;
+    padding: 20vh 0 2.6em 0;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+section#careers-heading h1 {
+    padding-bottom: 0.6em;
+}
+
+.career-list-item {
+    display: flex;
+    align-items: center;
+    padding: 0.6em;
+}
+
+.career-list-item svg {
+    padding-right: 0.6em;
+}
+
+.main-container-careers {
+    display: flex;
+    padding-top: 3em;
+}
+
+.main-container-careers .col-1 {
+    margin: 0 auto;
+}
+
+.main-container-careers .col-2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: hsl(233, 8%, 62%);
+}
+
+.open-pos-btn {
+    padding: 1.2em 2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 100;
+    font-family: "Public Sans", sans-serif;
+    border-radius: 23px;
+    cursor: pointer;
+    display: block;
+    margin: 6em auto 2em auto;
+    background-color: #50AAC0;
+    color: hsl(0, 0%, 100%);
+    outline: none;
+    border: none;
+}
+
+.open-pos-btn:hover {
+    opacity: 0.8;
+}
+
+.apply-container {
+    text-align: center;
+    color:hsl(233, 8%, 62%);
+} 
+
+.apply-container p {
+    font-weight: 100;
+    padding-bottom: 5em;
+    display: inline-block;
+}
+
+.apply-container p:hover {
+    cursor: pointer;
+    color: hsl(233, 26%, 24%);
+}
+
 address {
     text-align: center;
     font-style: normal;
@@ -589,6 +670,25 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1080px) {
+
+    .main-container-careers .col-2 {
+        width: 100%;
+    }
+
+    .main-container-careers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-container-careers ul {
+        margin: 0 auto;
+        padding-top: 1em;
+    }
+
+    .main-container-careers h3 {
+        text-align: center;
+        padding-top: 2em;
+    }
 
     .blog-card {
         width: 100%;
