@@ -32,7 +32,7 @@ html {
 .modal {
     position: relative;
     background-color:hsl(0, 0%, 100%);
-    width: 40%;
+    width: 45%;
     height: 70%;
     border-radius: 0.8em;
     flex-direction: column;
@@ -40,6 +40,7 @@ html {
     padding: 2em 0;
     font-size: 1em;
     color:rgba(0, 0, 0, 0.7);
+    text-align: center;
 }
 
 .modal-active {
@@ -77,6 +78,12 @@ html {
 
 .modal h2 {
     color:hsla(136, 70%, 36%, 0.7);
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.invite-icon {
+    width: 1.2em;
 }
 
 body,
@@ -265,6 +272,7 @@ section#latest-articles {
     padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 section#latest-articles .card {
@@ -305,6 +313,10 @@ section#latest-articles p:last-of-type:hover,
 section#latest-articles h6:hover {
     color: hsl(136, 65%, 51%);
     cursor: pointer;
+}
+
+.blog-card {
+    width: 25%;
 }
 
 .author {
@@ -531,6 +543,11 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 1080px) {
+
+    .blog-card {
+        width: 100%;
+    }
+
     .icon-q-a-small-1 {
         top: 30%;
         left: 35%;
