@@ -555,7 +555,7 @@ section#careers-heading h1 {
 }
 
 .open-pos-btn {
-    padding: 1.2em 2em;
+    padding: 0.8em 1.9em;
     text-transform: uppercase;
     font-size: 1em;
     font-weight: 100;
@@ -697,9 +697,23 @@ input[type="submit"] {
     .icon-q-a-small-2 {
         left: 45%;
     }
+
+    section#next-generation-banking {
+        flex-direction: column-reverse;
+    }
 }
 
 @media screen and (max-width: 768px) {
+
+    section#careers-heading {
+        max-width: 90%;
+        padding-bottom: 0;
+    }
+
+    section#careers-heading h1 {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
 
     #blog-main {
         flex-direction: column;
@@ -719,7 +733,6 @@ input[type="submit"] {
     #blog-main .col-2 {
         text-align: left;
     }
-
 
     .icon-q-a-small-1,
     .icon-q-a-small-2 {

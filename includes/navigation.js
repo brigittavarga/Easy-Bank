@@ -8,7 +8,6 @@ document.write(
   
     <ul class="nav-links desktop-nav">
       <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="careers.html">Careers</a></li>

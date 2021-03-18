@@ -30,7 +30,7 @@ document.write(
     
     <div class="col col-2">
       <ul class="nav-links-footer">
-        <li><a href="#">About Us</a></li>
+      <li><a href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#">Blog</a></li>
       </ul>
@@ -43,7 +43,6 @@ document.write(
         <li><a href="#">Privacy Policy</a></li>
       </ul>
     </div>
-    
 
     <div class="col col-4">
       <button class="invite-btn modal-btn">Request Invite</button>
